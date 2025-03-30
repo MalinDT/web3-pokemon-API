@@ -1,0 +1,40 @@
+.pgrid {
+    display: grid;
+    max-width: 1000px;
+    grid-template-columns: repeat(auto-fill, 300px);
+    margin: 0 auto;
+    justify-content: center;
+    gap: 50px;
+}
+
+.pokemoncard {
+    background: #E98787;
+    border: 7px solid #FED102;
+    width: 250px;
+    height: 400px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.image img {
+    width: 175px;
+    height: auto;
+}
+
+.pokemonname {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pokemonstats {
+    background: #d3aba8;
+    height: 155px;
+    margin: 20px 20px;
+}
