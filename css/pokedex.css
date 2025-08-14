@@ -1,17 +1,65 @@
-.pgrid {
-    display: grid;
-    max-width: 1000px;
-    grid-template-columns: repeat(auto-fill, 300px);
-    margin: 0 auto;
+.type-container {
+    display: flex;
     justify-content: center;
-    gap: 50px;
+    align-items: center;
+    gap: 16px;
+    background: #f8f8f8;
+    padding: 12px 0;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    margin: 24px auto 32px auto;
+    width: fit-content;
+}
+
+.type-container button {
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px;
+    transition: box-shadow 0.2s, border-color 0.2s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    cursor: pointer;
+    padding: 0;
+}
+.type-container button:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    border-color: #bdbdbd;
+}
+.type-container img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.pgrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    max-width: 1200px;
+    margin: 32px auto 0 auto;
 }
 
 .pokemoncard {
-    background: #E98787;
-    border: 7px solid #FED102;
-    width: 250px;
-    height: 400px;
+    background: #f8bcbc;
+    border: 3px solid #ffd600;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 18px 16px;
+    width: 240px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: auto;
+    margin-bottom: 16px;
+}
+.pokemoncard:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.16);
 }
 
 .image {
@@ -24,17 +72,214 @@
 }
 
 .image img {
-    width: 175px;
+    width: 120px;
     height: auto;
 }
 
 .pokemonname {
     text-align: center;
     margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .pokemonstats {
     background: #d3aba8;
-    height: 155px;
-    margin: 20px 20px;
+    border-radius: 10px;
+    height: auto;
+    margin: 20px 10px 0 10px;
+    padding: 10px 0;
+    font-size: 1em;
 }
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;  /* Sentrer horisontalt */
+    align-items: center;      /* Sentrer vertikalt */
+    height: 10vh;            /* Valgfritt: full høyde på skjermen */
+    background-color: rgb(102, 102, 102);
+  }
+  
+  img{   
+    width: 150px;    
+    height: auto;
+  }
+  
+  .btn {
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-weight: bold;
+      background-color: #ffcb05;
+      color: #2a75bb;
+      border: 2px solid var(-color);
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+  }
+  
+  .btn:hover {
+      background-color: var(-color);
+      color: #fff;
+      border-color:#ffcb05;
+      transform: scale(1.05);
+  }
+  
+  .starter-btn {
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-weight: bold;
+      background-color: #ffcb05;
+      color: #2a75bb;
+      border: 2px solid var(-color);
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+  }
+  
+  .starter-btn:hover {
+      background-color: var(-color);
+      color: #fff;
+      border-color:#ffcb05;
+      transform: scale(1.05);
+  }
+  
+  .type-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 50px;
+  }
+  
+  .type-container button {
+    border-radius: 50%;
+    border: none;
+    background: none;
+  }
+  
+  .type-container button:hover {
+    transform: scale(1.05);
+  }
+  
+.controls-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: 24px auto 16px auto;
+  max-width: 1200px;
+}
+#search-bar {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  width: 220px;
+}
+#sort-dropdown, #generation-selector {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+#type-chart-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #ffd600;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#type-chart-btn:hover {
+  background: #f8bcbc;
+}
+#favorites-team {
+  margin: 0 auto 24px auto;
+  max-width: 1200px;
+  min-height: 40px;
+  background: #f8f8f8;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  padding: 12px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+.modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px 24px;
+  max-width: 400px;
+  width: 90vw;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+  position: relative;
+}
+#close-modal, #close-type-chart {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: #888;
+  cursor: pointer;
+}
+#close-modal:focus, #close-type-chart:focus {
+  outline: 2px solid #ffd600;
+}
+@media (max-width: 700px) {
+  .controls-bar, #favorites-team {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+  .modal-content {
+    padding: 16px 6px;
+    max-width: 98vw;
+  }
+}
+/* Loading spinner */
+#loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 32px auto;
+}
+.spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #ffd600;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* Error message */
+#error-message {
+  color: #d32f2f;
+  background: #fff3f3;
+  border: 1px solid #ffd6d6;
+  border-radius: 8px;
+  padding: 12px 18px;
+  margin: 24px auto;
+  max-width: 400px;
+  text-align: center;
+  font-weight: bold;
+}
+  
