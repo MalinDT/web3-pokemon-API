@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick a Starter</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pokedex.css">
+    <script src="../js/starter.js" defer></script>
+  </head>
+  <body>
+    <header class="logo-container">
+      <a href="index.html"><img class="logo" src="../img/pokemon-logo-png-1421.png" alt="pokemon logo"></a>
+      <div>
+        <a href="starter.html" class="starter-btn">Generate</a>
+        <a href="pokedex.html" class="btn">Pokedex</a>
+      </div>
+    </header>
+
+    <div class="controls-bar" style="margin-top:24px;">
+      <label for="gen-select" style="font-weight:bold;">Select Generation</label>
+      <select id="gen-select" aria-label="Select Generation">
+        <option value="1">Gen 1 (Kanto)</option>
+        <option value="2">Gen 2 (Johto)</option>
+        <option value="3">Gen 3 (Hoenn)</option>
+        <option value="4">Gen 4 (Sinnoh)</option>
+        <option value="5">Gen 5 (Unova)</option>
+        <option value="6">Gen 6 (Kalos)</option>
+        <option value="7">Gen 7 (Alola)</option>
+        <option value="8">Gen 8 (Galar)</option>
+        <option value="9">Gen 9 (Paldea)</option>
+      </select>
+      <button id="get-starter" class="btn">Get Starter</button>
+    </div>
+
+    <div id="starter-result" class="pgrid" style="margin-top: 8px;"></div>
+  </body>
+  </html>
+
