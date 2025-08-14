@@ -28,6 +28,7 @@ async function fetchPokemonData(){
     }
 }
 
+
 async function showTypeIcons(){
     
     const container = document.getElementById("types")
